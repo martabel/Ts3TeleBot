@@ -1,0 +1,4 @@
+future==0.15.2
+python-telegram-bot==3.3
+toml==0.10.0
+
