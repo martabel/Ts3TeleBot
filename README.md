@@ -1,2 +1,26 @@
 # Ts3TeleBot
 Teamspeak3 Telegram Bot
+
+With this little Telegram bot you can get a list of the current active Teamspeak users.
+
+# Configuration
+Setup a `config.toml` file near the source files or export a environment variable `TS3_TELE_BOT_CFG`
+
+config.toml
+```
+[teamspeak]
+host = "localhost"
+port = 10011
+sa_passwd = "YourTeamspeakServerAdminPassword"
+
+[telegram]
+api_token = "YourTelegramBotApiToken"
+```
+
+# Run with python 3
+```
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+python3 telegramBot.py
+```
